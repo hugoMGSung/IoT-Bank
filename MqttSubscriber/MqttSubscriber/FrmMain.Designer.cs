@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmMain));
             this.label1 = new System.Windows.Forms.Label();
             this.TxtConnectionString = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -96,7 +97,7 @@
             this.TxtTopic.Name = "TxtTopic";
             this.TxtTopic.Size = new System.Drawing.Size(391, 25);
             this.TxtTopic.TabIndex = 1;
-            this.TxtTopic.Text = "home/sensor1/data/";
+            this.TxtTopic.Text = "home/device/data/";
             // 
             // label4
             // 
@@ -164,6 +165,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.TxtConnectionString);
             this.Controls.Add(this.label1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmMain";
             this.Text = "MQTT Client";
             this.Load += new System.EventHandler(this.FrmMain_Load);
