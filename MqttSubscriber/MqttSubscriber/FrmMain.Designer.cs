@@ -40,6 +40,8 @@
             this.BtnConnect = new System.Windows.Forms.Button();
             this.BtnDisconnect = new System.Windows.Forms.Button();
             this.RtbRecieved = new System.Windows.Forms.RichTextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.TxtControlTemp = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label1
@@ -86,9 +88,9 @@
             this.label3.Font = new System.Drawing.Font("나눔고딕", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.label3.Location = new System.Drawing.Point(22, 81);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(45, 17);
+            this.label3.Size = new System.Drawing.Size(114, 17);
             this.label3.TabIndex = 0;
-            this.label3.Text = "Topic";
+            this.label3.Text = "Subscribe Topic";
             // 
             // TxtTopic
             // 
@@ -105,9 +107,9 @@
             this.label4.Font = new System.Drawing.Font("나눔고딕", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.label4.Location = new System.Drawing.Point(22, 112);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(62, 17);
+            this.label4.Size = new System.Drawing.Size(99, 17);
             this.label4.TabIndex = 0;
-            this.label4.Text = "Payload";
+            this.label4.Text = "Publish Topic";
             // 
             // TxtPayload
             // 
@@ -116,11 +118,12 @@
             this.TxtPayload.Name = "TxtPayload";
             this.TxtPayload.Size = new System.Drawing.Size(391, 25);
             this.TxtPayload.TabIndex = 1;
+            this.TxtPayload.Text = "home/device/control/";
             // 
             // BtnConnect
             // 
             this.BtnConnect.Font = new System.Drawing.Font("나눔고딕", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.BtnConnect.Location = new System.Drawing.Point(695, 97);
+            this.BtnConnect.Location = new System.Drawing.Point(700, 128);
             this.BtnConnect.Name = "BtnConnect";
             this.BtnConnect.Size = new System.Drawing.Size(113, 37);
             this.BtnConnect.TabIndex = 2;
@@ -131,7 +134,7 @@
             // BtnDisconnect
             // 
             this.BtnDisconnect.Font = new System.Drawing.Font("나눔고딕", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.BtnDisconnect.Location = new System.Drawing.Point(814, 97);
+            this.BtnDisconnect.Location = new System.Drawing.Point(819, 128);
             this.BtnDisconnect.Name = "BtnDisconnect";
             this.BtnDisconnect.Size = new System.Drawing.Size(113, 37);
             this.BtnDisconnect.TabIndex = 2;
@@ -143,11 +146,30 @@
             // 
             this.RtbRecieved.Enabled = false;
             this.RtbRecieved.Font = new System.Drawing.Font("나눔고딕", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.RtbRecieved.Location = new System.Drawing.Point(12, 145);
+            this.RtbRecieved.Location = new System.Drawing.Point(12, 171);
             this.RtbRecieved.Name = "RtbRecieved";
-            this.RtbRecieved.Size = new System.Drawing.Size(920, 441);
+            this.RtbRecieved.Size = new System.Drawing.Size(920, 415);
             this.RtbRecieved.TabIndex = 3;
             this.RtbRecieved.Text = "";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("나눔고딕", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label5.Location = new System.Drawing.Point(22, 143);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(150, 17);
+            this.label5.TabIndex = 0;
+            this.label5.Text = "Control Temperature";
+            // 
+            // TxtControlTemp
+            // 
+            this.TxtControlTemp.Font = new System.Drawing.Font("나눔고딕", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.TxtControlTemp.Location = new System.Drawing.Point(179, 140);
+            this.TxtControlTemp.Name = "TxtControlTemp";
+            this.TxtControlTemp.Size = new System.Drawing.Size(391, 25);
+            this.TxtControlTemp.TabIndex = 1;
+            this.TxtControlTemp.Text = "25.0, 23.0";
             // 
             // FrmMain
             // 
@@ -157,6 +179,8 @@
             this.Controls.Add(this.RtbRecieved);
             this.Controls.Add(this.BtnDisconnect);
             this.Controls.Add(this.BtnConnect);
+            this.Controls.Add(this.TxtControlTemp);
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.TxtPayload);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.TxtTopic);
@@ -166,6 +190,8 @@
             this.Controls.Add(this.TxtConnectionString);
             this.Controls.Add(this.label1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "FrmMain";
             this.Text = "MQTT Client";
             this.Load += new System.EventHandler(this.FrmMain_Load);
@@ -187,6 +213,8 @@
         private System.Windows.Forms.Button BtnConnect;
         private System.Windows.Forms.Button BtnDisconnect;
         private System.Windows.Forms.RichTextBox RtbRecieved;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox TxtControlTemp;
     }
 }
 
