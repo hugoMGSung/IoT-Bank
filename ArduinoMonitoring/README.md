@@ -1,7 +1,6 @@
 # ArduinoMonitoring
 아두이노 모니터링 앱
-
-![Alt text](captured_20200828_001.png "실행결과")
+<img src="captured_20200828_001.png" width="450px" title="실행결과" alt="실행결과"></img>
 
 ## 사용기술
 > * [C#(.NET Framework 4.7.2)](https://dotnet.microsoft.com/download/dotnet-framework/net472)
